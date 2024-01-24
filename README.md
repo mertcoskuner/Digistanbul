@@ -1,1 +1,2 @@
 # Digistanbul
+ A user-friendly application designed for exploring Istanbul's attractions. It stores information on cafes, restaurants, and landmarks, offering personalized recommendations. Users can engage by commenting, rating, and creating accounts. The database includes key details for informed decisions. "Digistanbul" aims to simplify and enhance the discovery of Istanbul's diverse offerings through this intuitive application.
