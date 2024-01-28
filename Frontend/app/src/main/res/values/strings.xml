@@ -1,0 +1,11 @@
+<resources>
+    <string name="update">Update</string>
+    <string name="app_name">310frontend</string>
+    <string name="home_button_description">Home Button</string>
+    <string name="settings_button_description">Settings Button</string>
+    <string name="favorites_button_description">Favorites Button</string>
+    <string name="profile_button_description">Profile Button</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="cafe">Cafe</string>
+    <string name="historical">Historical</string>
+</resources>

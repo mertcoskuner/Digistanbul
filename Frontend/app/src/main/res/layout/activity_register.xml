@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="72dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="15dp"
+                android:background="?attr/selectableItemBackground"
+                android:padding="16dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/back"
+                android:contentDescription="Back Button" />
+
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_marginTop="100dp"
+                android:gravity="center_horizontal"
+                android:text="Register"
+
+                android:textColor="@color/design_blue"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+
+            <TextView
+
+                android:id="@+id/termsText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView"
+
+                android:layout_marginLeft="50dp"
+                android:text="By signing in you are agreeing our "
+
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/termsLink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView"
+                android:layout_marginLeft="90dp"
+
+                android:layout_toEndOf="@id/termsText"
+                android:gravity="center_horizontal"
+                android:text="Term and privacy policy"
+                android:textColor="@color/design_blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/email_reg_input"
+                android:layout_width="337dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="45dp"
+
+                android:drawableStart="@android:drawable/sym_action_email"
+                android:ems="10"
+                android:hint="  E-mail Address"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                />
+
+            <EditText
+                android:id="@+id/username_reg_input"
+                android:layout_width="337dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="45dp"
+
+                android:drawableStart="@android:drawable/sym_action_email"
+                android:ems="10"
+                android:hint="  Username"
+                android:inputType="textEmailAddress"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                />
+
+            <EditText
+                android:id="@+id/password_reg_input"
+                android:layout_width="338dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="45dp"
+
+                android:drawableStart="@android:drawable/ic_lock_idle_lock"
+                android:ems="10"
+                android:hint="  Password"
+                android:inputType="textPassword"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <EditText
+                android:id="@+id/editTextRPassword"
+                android:layout_width="338dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="45dp"
+                android:drawableStart="@android:drawable/ic_lock_idle_lock"
+                android:ems="10"
+                android:hint="  Re-enter Password"
+                android:inputType="textPassword"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="15dp"
+                android:text="Forgot Password ?"
+                android:textColor="@color/design_blue"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="261dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="45dp"
+                android:backgroundTint="@color/design_blue"
+                android:text="Login" />
+
+            <!--
+            <ImageView
+                android:id="@+id/imageButtonGoogle"
+                android:layout_width="72dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="?attr/selectableItemBackground"
+                android:padding="12dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/img" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="2026dp"
+                android:layout_height="337dp"
+                android:layout_gravity="center"
+                android:src="@drawable/bottom"
+
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent" />
+            -->
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+        <!-- Existing shape or drawable -->
+        <item android:drawable="@drawable/rectangle" />
+
+        <!-- Padding to shift content down -->
+        <item android:top="100dp">
+            <shape android:shape="rectangle">
+                <solid android:color="#1D2E4A" /> <!-- Dark blue color -->
+            </shape>
+        </item>
+    </layer-list>
+
+</selector>

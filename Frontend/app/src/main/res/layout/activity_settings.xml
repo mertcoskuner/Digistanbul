@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/design_blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:id="@+id/whiteback"
+                android:layout_width="400dp"
+                android:layout_height="700dp"
+                android:layout_marginTop="24dp"
+                android:background="@drawable/main"
+                android:src="@drawable/rectangle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.454"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textSettings">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="148dp"
+                android:text="Settings"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:ignore="MissingConstraints"
+                tools:layout_editor_absoluteY="69dp" />
+
+            <ImageButton
+                android:id="@+id/backB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:layout_marginBottom="7dp"
+                android:background="@android:color/transparent"
+                android:contentDescription="Back Button"
+                android:src="@drawable/back"
+                app:layout_constraintBottom_toTopOf="@+id/whiteback"
+                app:layout_constraintEnd_toStartOf="@+id/textSettings"
+                app:layout_constraintHorizontal_bias="0.324"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/profileView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="24dp"
+                app:layout_constraintEnd_toStartOf="@+id/textProfileName"
+                app:layout_constraintHorizontal_bias="0.491"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/whiteback" />
+
+
+            <TextView
+                android:id="@+id/textProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:text=""
+                android:textColor="#0C0909"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/whiteback" />
+
+
+            <Button
+                android:id="@+id/buttonUpdateProfile"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="136dp"
+                android:foreground="@color/design_blue"
+                android:text="Update Profile"
+                android:textColor="@color/white"
+                app:iconTint="#3F51B5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.448"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextPassword" />
+
+            <TextView
+                android:id="@+id/textEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="                      Edit Profile"
+                android:textColor="#0E0808"
+                android:textColorHint="#090505"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toTopOf="@id/divider1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.067"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textProfileName" />
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="380dp"
+                android:layout_height="2dp"
+                android:background="@color/main_color"
+                app:layout_constraintBottom_toTopOf="@+id/editTextUsername"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.483"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textEditProfile" />
+
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="352dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="36dp"
+                android:ems="10"
+                android:hint="Username"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#090606"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.338"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/divider1" />
+
+            <EditText
+                android:id="@+id/editTextPhone"
+                android:layout_width="350dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="Phone Number"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#040202"
+                app:layout_constraintBottom_toTopOf="@id/editTextEmail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.262"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="357dp"
+                android:layout_height="46dp"
+                android:ems="10"
+                android:hint="E-mail"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#050303"
+                app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.277"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/editTextUsername"
+                app:layout_constraintVertical_bias="0.86" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="355dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="144dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#070404"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.267"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextUsername" />
+
+            <EditText
+                android:id="@+id/editTextNewPassword"
+                android:layout_width="356dp"
+                android:layout_height="46dp"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:hint="New Password"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textColorHint="#070505"
+                app:layout_constraintBottom_toTopOf="@+id/buttonUpdateProfile"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.29"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="top" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="top" />
+
+            <ImageView
+                android:id="@+id/selectedImageView"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonUpdateProfile" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Profile"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="@+id/buttonUpdateProfile"
+                app:layout_constraintEnd_toEndOf="@+id/buttonUpdateProfile"
+                app:layout_constraintStart_toStartOf="@+id/buttonUpdateProfile"
+                app:layout_constraintTop_toTopOf="@+id/buttonUpdateProfile" />
+
+            <!--
+            <Button
+                android:id="@+id/buttonSelectImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Select Image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/buttonUpdateProfile" />
+               -->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
